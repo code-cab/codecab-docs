@@ -1,0 +1,69 @@
+::say [Hello!] for (2) secs
+await this.say(${1:string@"Hello!"}, ${2:duration (seconds)@2});\n
+this.say(${1:string@"Hello!"}, ${2:duration (seconds)@2});\n
+
+::say [Hello!]
+this.say(${2:string@"Hello!"});\n
+
+::think [Hello!] for (2) secs
+await this.think(${1:string@"Hello!"}, ${2:duration (seconds)@2});\n
+this.think(${1:string@"Hello!"}, ${2:duration (seconds)@2});\n
+
+::think [Hello!]
+this.think(${1:string@"Hello!"});\n
+
+::
+
+
+::show
+this.visible = true;\n
+
+::hide
+this.visible = false;\n
+
+::
+
+::switch costume to [cab v]
+this.source = ${1:image url@"img/cab.png"};\n
+
+::switch backdrop to [background1 v]
+this.stage.setBackground(${1:image url@"img/background1.png"});
+this.stage.setBackground(${1:image url@"img/background1.png"}, "cover");
+this.stage.setBackground(${1:image url@"img/tile.png"}, "tiling");
+
+::
+
+::change size by (10)
+this.scale += ${1:fraction (1 = 100%)@0.1};\n
+
+::set size to (50) %
+this.scale = ${1:fraction (1 = 100%)@0.5};\n
+
+::rotate sprite to (90) :: looks
+this.rotation = ${1:degrees@90};\n
+
+::
+
+::go to front
+this.toFront();\n
+
+::go back (3) layers
+this.order -= ${1:nr of layers@3};\n
+this.order += ${1:nr of layers@-3};\n
+
+::
+
+::(scale :: looks)
+this.scale
+this.stage.watch(${1:x@0}, ${2:y@0}, 'scale', () => this.scale);\n
+
+::(layer :: looks)
+this.spriteIndex;
+
+::(visible :: looks)
+this.visible
+this.stage.watch(${1:x@0}, ${2:y@0}, 'visible', () => this.visible);\n
+
+::(rotation :: looks)
+this.rotation
+this.stage.watch(${1:x@0}, ${2:y@0}, 'rotation', () => this.rotation);\n

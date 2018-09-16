@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CodeCab Doc preview</title>
+    <!--<script-->
+            <!--src="https://code.jquery.com/jquery-3.3.1.min.js"-->
+            <!--integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="-->
+            <!--crossorigin="anonymous"></script>-->
+    <link rel="stylesheet" href="../../codecab-ide/build/style/style.css">
+    <!--<link rel="stylesheet" href="https://code.cab/style/style.css">-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <style>
+        body {
+            background-color: lightgrey;
+        }
+        .right {
+            background-color: white;
+            top: 10px;
+            left: 0px;
+            right: inherit;
+            height: calc(100vh);
+        }
+        .help-pane {
+            top: 0 !important;
+        }
+        .helpdoc {
+            height: calc(100vh) !important;
+        }
+    </style>
+    <script>
+        window.__build_version__ = "123456";
+//        window.__autoRefreshDoc__ = true;
+    </script>
+</head>
+<body>
+    <div class="right">
+        <div class="help-pane top" id="preview-helpdoc"></div>
+    </div>
+    <script src="../../codecab-ide/build/script/ide.js"></script>
+<!--    <script src="https://code.cab/script/ide.js"></script>-->
+    <script>
+        LiveReloadPluginHelpdoc = class {
+            reload(path, options) {
+                if (path === 'md') {
+                    __require('jquery')('body').trigger('helpdoc-refresh');
+                    return true;
+                }
+            }
+        };
+    </script>
+    <script src="http://localhost:35000/livereload.js?snipver=1"></script>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="350"
+   height="220"
+   viewBox="0 0 92.60417 58.208335"
+   version="1.1"
+   id="svg4539"
+   sodipodi:docname="js-async-prog.svg"
+   inkscape:version="0.92.1 r15371"
+   inkscape:export-filename="C:\proj\codecab_prj\codecab-docs\workimg\js-async-prog.png"
+   inkscape:export-xdpi="192"
+   inkscape:export-ydpi="192">
+  <defs
+     id="defs4533" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.597067"
+     inkscape:cx="-29.514716"
+     inkscape:cy="55.171829"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1920"
+     inkscape:window-height="976"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="true"
+     inkscape:snap-bbox-edge-midpoints="true">
+    <sodipodi:guide
+       position="10.424481,-8.4388659"
+       orientation="1,0"
+       id="guide5339"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata4536">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Laag 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-238.79165)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222247px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:Consolas;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458335"
+       x="10.530315"
+       y="245.16261"
+       id="text5126"><tspan
+         sodipodi:role="line"
+         id="tspan5124"
+         x="10.530315"
+         y="245.16261"
+         style="stroke-width:0.26458335">cab.onStart(<tspan
+   style="font-weight:bold;fill:#ff0000"
+   id="tspan5142">async</tspan> function() {</tspan><tspan
+         sodipodi:role="line"
+         x="10.530315"
+         y="248.69038"
+         style="stroke-width:0.26458335"
+         id="tspan5128">  while (true) {</tspan><tspan
+         sodipodi:role="line"
+         x="10.530315"
+         y="252.21817"
+         style="stroke-width:0.26458335"
+         id="tspan5132">    this.move(10);</tspan><tspan
+         sodipodi:role="line"
+         x="10.530315"
+         y="255.74594"
+         style="stroke-width:0.26458335"
+         id="tspan5136">    <tspan
+   style="font-weight:bold;fill:#ff0000"
+   id="tspan5144">await</tspan> this.delay(1);</tspan><tspan
+         sodipodi:role="line"
+         x="10.530315"
+         y="259.27371"
+         style="stroke-width:0.26458335"
+         id="tspan5134">    this.move(-10);</tspan><tspan
+         sodipodi:role="line"
+         x="10.530315"
+         y="262.80151"
+         style="stroke-width:0.26458335"
+         id="tspan5138">    <tspan
+   style="font-weight:bold;fill:#ff0000"
+   id="tspan5146">await</tspan> this.delay(1);</tspan><tspan
+         sodipodi:role="line"
+         x="10.530315"
+         y="266.32928"
+         style="stroke-width:0.26458335"
+         id="tspan5140">  }</tspan><tspan
+         sodipodi:role="line"
+         x="10.530315"
+         y="269.85706"
+         style="stroke-width:0.26458335"
+         id="tspan5130">});</tspan><tspan
+         sodipodi:role="line"
+         x="10.530315"
+         y="273.38483"
+         style="stroke-width:0.26458335"
+         id="tspan5148" /><tspan
+         sodipodi:role="line"
+         x="10.530315"
+         y="276.91263"
+         style="stroke-width:0.26458335"
+         id="tspan5150">cab.onStart(<tspan
+   style="font-weight:bold;fill:#ff0000"
+   id="tspan6480">async</tspan> function() {</tspan><tspan
+         sodipodi:role="line"
+         x="10.530315"
+         y="280.4404"
+         style="stroke-width:0.26458335"
+         id="tspan5152">  while (true) {</tspan><tspan
+         sodipodi:role="line"
+         x="10.530315"
+         y="283.96817"
+         style="stroke-width:0.26458335"
+         id="tspan5160">    <tspan
+   style="font-weight:bold;fill:#ff0000"
+   id="tspan6482">await</tspan> this.say(&quot;Hello&quot;, 2.5);</tspan><tspan
+         sodipodi:role="line"
+         x="10.530315"
+         y="287.49594"
+         style="stroke-width:0.26458335"
+         id="tspan5156">    <tspan
+   style="font-weight:bold;fill:#ff0000"
+   id="tspan6484">await</tspan> this.delay(2.5);</tspan><tspan
+         sodipodi:role="line"
+         x="10.530315"
+         y="291.02374"
+         style="stroke-width:0.26458335"
+         id="tspan5158">  }</tspan><tspan
+         sodipodi:role="line"
+         x="10.530315"
+         y="294.55151"
+         style="stroke-width:0.26458335"
+         id="tspan5154">});</tspan></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot5166"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.66666698px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:Consolas;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458334,0,0,0.26458334,0,250.6979)"><flowRegion
+         id="flowRegion5168"><rect
+           id="rect5170"
+           width="21.263283"
+           height="88.180084"
+           x="37.523441"
+           y="121.2164" /></flowRegion><flowPara
+         id="flowPara5172"></flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot5174"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.66666698px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:Consolas;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458334,0,0,0.26458334,0,250.6979)"><flowRegion
+         id="flowRegion5176"><rect
+           id="rect5178"
+           width="11.257032"
+           height="20.637894"
+           x="73.170708"
+           y="74.937492" /></flowRegion><flowPara
+         id="flowPara5180"></flowPara></flowRoot>  </g>
+</svg>

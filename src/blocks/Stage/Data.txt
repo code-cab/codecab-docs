@@ -1,0 +1,48 @@
+==block variable
+
+::make variable [myVar] :: variables
+let ${1:myVar};\n
+let ${1:a} = ${2:10};\n
+let ${1:someVariable123} = ${2:"Hello"};\n
+
+::set [myVar v] to (10) :: variables
+${1:myVar} = ${2:10};\n
+${1:myVar} = ${2:"Hello"};\n
+${1:myVar} = ${2:'Hello'};\n
+
+::change [myVar v] by (5) :: variables
+${1:myVar} += ${2:5};\n
+
+==global variable
+
+::set [myVar v] to (10) :: variables
+global.${1:myVar} = ${2:10};\n
+global.${1:myVar} = ${2:"Hello"};\n
+global.${1:myVar} = ${2:'Hello'};\n
+
+::change [myGlobalVar v] by (5) :: variables
+global.${1:myGlobalVar} += 5;\n
+global.${1:a} += "Hello";\n
+
+::remove [myVar v] :: variables
+delete global.${1:myVar};\n
+
+==property for all sprites
+
+::make [myProp] and set to [20] :: variables
+${1:this}.${2:myProp} = ${3:20};\n
+
+::change [myProp v] by (5) :: variables
+${1:this}.${2:myProp} += ${3:5};\n
+
+::remove [myProp v] :: variables
+delete ${1:this}.${1:myVar};\n
+
+==array
+:: set [myVar] to empty array :: variables
+${1:myList} = [];\n
+
+:: set [myVar] to array with [one] [two] [three] :: variables
+${1:myList} = ["one", "two", "three"];\n
+${1:myList} = ['one', 'two', 'three'];\n
+${1:myList} = [1, 2, 3];\n

@@ -1,0 +1,9 @@
+== soon coming!
+
+== debugging
+
+::debugger breakpoint :: more
+debugger;\n
+
+::log [Hello world] to debugger :: more
+console.log("Hello world");\n

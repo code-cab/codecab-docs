@@ -1,0 +1,17 @@
+{
+  "name": "codecab-docs",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "node ./src/build.js -path ./build",
+    "build-2-ide": "npm run build && cpy build/*.* ../codecab-ide/build",
+    "watch": "node ./src/build.js -path ./build -watch"
+  },
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "markdown-it": "^8.4.0",
+    "scratchblocks": "^3.1.2",
+    "livereload": "^0.7.0"
+  }
+}

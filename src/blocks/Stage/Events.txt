@@ -1,0 +1,30 @@
+::when green flag clicked
+stage.onStart(function() {\n\t${0:}\n});\n
+stage.onStart(async function() {\n\t${0:}\n});\n
+
+::
+
+::when [space v] key pressed
+stage.onKeyPress("${1:key@ }", function(event) {\n\t${0:}\n});\n
+stage.onKeyPress("${1:key@ }", async function(event) {\n\t${0:}\n});\n
+stage.onKeyPress("${1:key@a}", async function(event) {\n\t${0:}\n});\n
+stage.onKeyPress("${1:key@arrowLeft}", async function(event) {\n\t${0:}\n});\n
+stage.onKeyPress("${1:key@tab}", async function(event) {\n\t${0:}\n});\n
+
+::
+
+::when key pressed :: events hat
+stage.onKeyPress(function(event) {\n\tlet key = event.key;\n\t${0:}\n});\n
+stage.onKeyPress(async function(event) {\n\tlet key = event.key;\n\t${0:}\n});\n
+
+::
+
+::when I receive [message1 v]
+stage.on(${1:message name (string)@"message1"}, function() {\n\t${0:}\n});\n
+stage.on(${1:message name (string)@"message1"}, async function() {\n\t${0:}\n});\n
+stage.on(${1:message name (string)@"message1"}, function(${2:parameter name@data}) {\n\t${0:}\n});\n
+stage.on(${1:message name (string)@"message1"}, async function(${2:parameter name@data}) {\n\t${0:}\n});\n
+
+::broadcast [message1 v]
+stage.emit(${1:message name (string)@"message1"});
+stage.emit(${1:message name (string)@"message1"}, ${2:optional parameters@"some data"});

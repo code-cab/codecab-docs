@@ -1,0 +1,68 @@
+::move (10) steps
+[help:CSprite.move]
+this.move(${1:steps@10});\n
+
+::turn CW (15) degrees
+[help:CSprite.turn]
+this.turn(${1:degrees@15});\n
+
+::turn CCW (15) degrees
+this.turn(${1:degrees@-15});\n
+
+::
+
+::point in direction (90)
+this.direction = ${1:degrees@90};\n
+
+::point towards [mouse-pointer ^]
+this.pointTowards(stage.mouse);\n
+this.pointTowards(${1:sprite@sprite2});\n
+
+
+::go to x: (100) y: (150)
+this.goto(${1:x@100}, ${2:y@150});\n
+
+::glide x: (100) y: (150) in (1) secs :: motion
+await this.glideTo(${1:x@100}, ${2:y@150}, ${3:delay (seconds)@1});\n
+await this.tween({x: ${1:x@100}, y: ${2:y@150}}, ${3:delay (seconds)@1});\n
+await this.tween({\n\tx: ${1:x@100}, \n\ty: ${2:y@150}\n}, ${3:delay (seconds)@1}, ${4:easing@'sinusInOut'});\n
+
+::
+
+::change x by (10)
+this.x += ${1:pixels@10};\n
+
+::set x to (100)
+this.x = ${1:pixels@100};\n
+
+::change y by (-5)
+this.y += ${1:pixels@-5};\n
+this.y -= ${1:pixels@5};\n
+
+::set y to (100)
+this.y = ${1:pixels@100};\n
+
+::
+
+::if on edge, bounce
+this.bounceOnEdge();\n
+
+::
+
+::set rotation style [left-right v]
+this.rotationStyle = "left-right";\n
+this.rotationStyle = "none";\n
+this.rotationStyle = "all around";\n
+
+::(x-position :: motion)
+this.x
+this.stage.watch(${1:x@0}, ${2:y@0}, 'x', () => this.x);\n
+
+::(y-position :: motion)
+this.y
+this.stage.watch(${1:x@0}, ${2:y@20}, 'y', () => this.y);\n
+
+::(direction :: motion)
+this.direction
+this.stage.watch(${1:x@0}, ${2:y@30}, 'direction', () => this.direction);\n
+

@@ -1,0 +1,37 @@
+::wait (1) secs
+await stage.delay(${1:delay (seconds)@1});\n
+
+::await next frame :: control
+await stage.nextFrame();\n
+
+::
+
+::repeat (10)
+for (let ${1:variable name@count} = 0; ${1:count} < ${2:end value@10}; ${1:count} += 1) {\n\t${0:}\n}\n
+await stage.repeat(${1:amount@10}, () => {\n\t${0:}\n});\n
+await stage.repeat(${1:amount@10}, async () => {\n\t${0:}\n});\n
+
+::forever
+await stage.forever(() => {\n\t${0:}\n});\n
+await stage.forever(async () => {\n\t${0:}\n});\n
+
+::during (2) secs {
+::} :: control
+await stage.during(2, () => {\n\t${0:}\n});\n
+await stage.during(2, async() => {\n\t${0:}\n});\n
+
+::
+
+::if <> then
+if (${1:condition@cond}) {\n\t${0:}\n}\n
+
+::if <> then
+::else
+if (${1:condition@cond}) {\n\t${2}\n} else {\n\t${0}\n}\n
+
+::
+
+::repeat while <> {
+::} :: control
+while (${1:condition@cond}) {\n\t${0}\n}\n
+

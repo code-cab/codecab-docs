@@ -1,0 +1,40 @@
+::when green flag clicked
+${1:sprite variable name@sprite1}.onStart(function() {\n\t${0:}\n});\n
+${1:sprite variable name@sprite1}.onStart(async function() {\n\t${0:}\n});\n
+
+::
+
+::when [space v] key pressed
+${1:sprite variable name@sprite1}.onKeyPress("${2:key@ }", function(event) {\n\t${0:}\n});\n
+${1:sprite variable name@sprite1}.onKeyPress("${2:key@ }", async function(event) {\n\t${0:}\n});\n
+${1:sprite variable name@sprite1}.onKeyPress("${2:key@a}", async function(event) {\n\t${0:}\n});\n
+${1:sprite variable name@sprite1}.onKeyPress("${2:key@arrowLeft}", async function(event) {\n\t${0:}\n});\n
+${1:sprite variable name@sprite1}.onKeyPress("${2:key@tab}", async function(event) {\n\t${0:}\n});\n
+
+::
+
+::when key pressed :: events hat
+${1:sprite variable name@sprite1}.onKeyPress(function(event) {\n\tlet key = event.key;\n\t${0:}\n});\n
+${1:sprite variable name@sprite1}.onKeyPress(async function(event) {\n\tlet key = event.key;\n\t${0:}\n});\n
+
+::
+
+
+::when this sprite clicked
+${1:sprite variable name@sprite1}.onClick(function(event) {\n\t${0:}\n});\n
+${1:sprite variable name@sprite1}.onClick(async function(event) {\n\t${0:}\n});\n
+
+::
+
+::when I receive [message1 v]
+${1:sprite variable name@sprite1}.stage.on(${2:message name (string)@"message1"}, function() {\n\t${0:}\n});\n
+${1:sprite variable name@sprite1}.stage.on(${2:message name (string)@"message1"}, async function() {\n\t${0:}\n});\n
+${1:sprite variable name@sprite1}.stage.on(${2:message name (string)@"message1"}, function(${3:parameter name@data}) {\n\t${0:}\n});\n
+${1:sprite variable name@sprite1}.stage.on(${2:message name (string)@"message1"}, async function(${3:parameter name@data}) {\n\t${0:}\n});\n
+
+::broadcast [message1 v]
+this.stage.emit(${1:message name (string)@"message1"});
+this.stage.emit(${1:message name (string)@"message1"}, ${3:optional parameters@"some data"});
+
+::when sprite position changes
+${1:sprite variable name@sprite1}.on('position', function(pos) {\n\t${0:}\n});\n

@@ -1,0 +1,37 @@
+::wait (1) secs
+await this.delay(${1:delay (seconds)@1});\n
+
+::await next frame :: control
+await this.nextFrame();\n
+
+::
+
+
+::repeat (10)
+for (let ${1:variable name@count} = 0; ${1:count} < ${2:end value@10}; ${1:count} += 1) {\n\t${0:}\n}\n
+this.repeat(${1:amount@10}, () => {\n\t${0:}\n});\n
+await this.repeat(${1:amount@10}, async () => {\n\t${0:}\n});\n
+
+::forever
+this.forever(() => {\n\t${0:}\n});\n
+await this.forever(async () => {\n\t${0:}\n});\n
+
+::during (2) secs {
+::} :: control
+await this.during(2, async() => {\n\t${0:}\n});\n
+
+::
+
+::if <> then
+if (${1:condition@cond}) {\n\t${0:}\n}\n
+
+::if <> then
+::else
+if (${1:condition@cond}) {\n\t${2}\n} else {\n\t${0}\n}\n
+
+::
+
+::repeat while <> {
+::} :: control
+while (${1:condition@cond}) {\n\t${0}\n}\n
+

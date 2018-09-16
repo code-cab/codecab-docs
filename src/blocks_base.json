@@ -1,0 +1,174 @@
+{
+  "scratch": [
+    {
+      "type": "Stage",
+      "sections": [
+        {
+          "section": "Motion",
+          "class": "motion",
+          "blocks": [
+          ]
+        },
+        {
+          "section": "Events",
+          "class": "events",
+          "blocks": [
+          ]
+        },
+        {
+          "section": "Looks",
+          "class": "looks",
+          "blocks": []
+        },
+        {
+          "section": "Control",
+          "class": "control",
+          "blocks": [
+          ]
+        },
+        {
+          "section": "Physics",
+          "class": "physics",
+          "blocks": []
+        },
+        {
+          "section": "Sensing",
+          "class": "sensing",
+          "blocks": []
+        },
+        {
+          "section": "Pen & Sound",
+          "class": "pen",
+          "blocks": []
+        },
+        {
+          "section": "Operators",
+          "class": "operators",
+          "blocks": []
+        },
+        {
+          "section": "Data",
+          "class": "data",
+          "blocks": []
+        },
+        {
+          "section": "More",
+          "class": "more",
+          "blocks": []
+        }
+      ]
+    },
+    {
+      "type": "Sprite",
+      "active": "true",
+      "sections": [
+        {
+          "section": "Motion",
+          "class": "motion",
+          "blocks": []
+        },
+        {
+          "section": "Events",
+          "class": "events",
+          "blocks": []
+        },
+        {
+          "section": "Looks",
+          "class": "looks",
+          "blocks": []
+        },
+        {
+          "section": "Control",
+          "class": "control",
+          "blocks": []
+        },
+        {
+          "section": "Physics",
+          "class": "physics",
+          "blocks": []
+        },
+        {
+          "section": "Sensing",
+          "class": "sensing",
+          "blocks": []
+        },
+        {
+          "section": "Pen & Sound",
+          "class": "pen",
+          "blocks": []
+        },
+        {
+          "section": "Operators",
+          "class": "operators",
+          "blocks": []
+        },
+        {
+          "section": "Data",
+          "class": "data",
+          "blocks": []
+        },
+        {
+          "section": "More",
+          "class": "more",
+          "blocks": []
+        }
+      ]
+    },
+    {
+      "type": "More",
+      "active": "true",
+      "sections": [
+        {
+          "section": "Graphics",
+          "class": "motion",
+          "blocks": []
+        },
+        {
+          "section": "",
+          "class": "events",
+          "blocks": []
+        },
+        {
+          "section": "Text",
+          "class": "looks",
+          "blocks": []
+        },
+        {
+          "section": "",
+          "class": "control",
+          "blocks": []
+        },
+        {
+          "section": "",
+          "class": "physics",
+          "blocks": []
+        },
+        {
+          "section": "",
+          "class": "sensing",
+          "blocks": []
+        },
+        {
+          "section": "",
+          "class": "pen",
+          "blocks": []
+        },
+        {
+          "section": "",
+          "class": "operators",
+          "blocks": []
+        },
+        {
+          "section": "",
+          "class": "data",
+          "blocks": []
+        },
+        {
+          "section": "",
+          "class": "more",
+          "blocks": []
+        }
+      ]
+    }
+  ]
+}

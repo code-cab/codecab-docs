@@ -1,0 +1,72 @@
+::clear :: pen
+this.pen.clear();\n
+
+::
+
+::stamp
+this.pen.stamp();\n
+
+::
+
+::pen down
+this.pen.down();\n
+
+::pen up
+this.pen.up();\n
+
+::
+
+::set pen color to [#0000ff]
+this.pen.setColor(${1:red (0-255)@0}, ${2:green (0-255)@0}, ${3:blue (0-255)@255});\n
+
+::change pen color by (10)
+this.pen.hue += ${1:hue (0-360)@10};\n
+
+::set pen color to (0)
+this.pen.hue = ${1:hue (0-360)@0};\n
+
+::
+
+::change pen shade by (10)
+this.pen.saturation += ${1:saturation (0-100)@10};\n
+
+::set pen shade to (50)
+this.pen.saturation = ${1:saturation (0-100)@50};\n
+
+::set pen lightness to (50) :: pen
+this.pen.lightness = ${1:lightness (0-100)@50};\n
+
+::
+
+::change pen size by (1)
+this.pen.width += ${1:pen size@1};\n
+
+::set pen size to (5)
+this.pen.width = ${1:pen size@5};\n
+
+::set pen opacity to 0.5 :: pen
+this.pen.opacity = ${1:opacity (0-1)@0.5};\n
+
+== Sound
+
+::play sound [boing v] :: pen
+this.sound.play(${1:source@'sound/boing.mp3'});\n
+
+::play sound [boing v] until done :: pen
+await this.sound.play(${1:source@'sound/boing.mp3'});\n
+
+::stop all sounds :: pen
+this.sound.stopAll();\n
+
+::
+
+::change volume by (-10) :: pen
+this.sound.volume -= 10;\n
+
+::set volume to (100) % :: pen
+this.sound.volume = 100;\n
+
+::(volume :: pen)
+this.sound.volume
+this.stage.watch(${1:x@0}, ${2:y@0}, 'volume', () => this.sound.volume);\n
+

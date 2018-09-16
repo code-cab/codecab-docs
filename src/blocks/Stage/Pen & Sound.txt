@@ -1,0 +1,24 @@
+
+
+
+::play sound [boing v] :: pen
+stage.sound.play(${1:source@'sound/boing.mp3'});\n
+
+::play sound [boing v] until done :: pen
+await stage.sound.play(${1:source@'sound/boing.mp3'});\n
+
+::stop all sounds :: pen
+stage.sound.stopAll();\n
+
+::
+
+::change volume by (-10) :: pen
+stage.sound.volume -= 10;\n
+
+::set volume to (100) % :: pen
+stage.sound.volume = 100;\n
+
+::(volume :: pen)
+stage.sound.volume
+stage.watch(${1:x@0}, ${2:y@0}, 'volume', () => this.sound.volume);\n
+

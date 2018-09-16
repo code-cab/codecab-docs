@@ -1,0 +1,132 @@
+::() + ()
+${1:expression@expr1} + ${2:expression@expr2}
+(${1:expression@expr1} + ${2:expression@expr2})
+
+::() - ()
+${1:expression@expr1} - ${2:expression@expr2}
+(${1:expression@expr1} - ${2:expression@expr2})
+
+::() * ()
+${1:expression@expr1} * ${2:expression@expr2}
+(${1:expression@expr1} * ${2:expression@expr2})
+
+::() / ()
+${1:expression@expr1} / ${2:expression@expr2}
+(${1:expression@expr1} / ${2:expression@expr2})
+
+::
+
+::pick random (1) to (10)
+CMath.randomBetween(${1:1}, ${2:2})
+
+::
+
+::[] < []
+${1:condition@cond1} < ${2:condition@cond2}
+(${1:condition@cond1} < ${2:condition@cond2})
+
+::[] LE [] ::  operators boolean
+${1:condition@cond1} <= ${2:condition@cond2}
+(${1:condition@cond1} <= ${2:condition@cond2})
+
+::[] > []
+${1:condition@cond1} > ${2:condition@cond2}
+(${1:condition@cond1} > ${2:condition@cond2})
+
+::[] >= [] ::  operators boolean
+${1:condition@cond1} >= ${2:condition@cond2}
+(${1:condition@cond1} >= ${2:condition@cond2})
+
+::[] = []
+${1:condition@cond1} === ${2:condition@cond2}
+(${1:condition@cond1} === ${2:condition@cond2})
+
+::[] NE [] ::  operators boolean
+${1:condition@cond1} !== ${2:condition@cond2}
+(${1:condition@cond1} !== ${2:condition@cond2})
+
+::
+
+::<> and <>
+${1:condition@cond1} && ${2:condition@cond2}
+(${1:condition@cond1} && ${2:condition@cond2})
+
+::<> or <>
+${1:condition@cond1} || ${2:condition@cond2}
+(${1:condition@cond1} || ${2:condition@cond2})
+
+::not <>
+!${1:condition@cond}
+(!${1:condition@cond})
+!(${1:condition@cond})
+
+::
+
+::join [Hello][world]
+${1:"Hello"} + ${2:" world"}
+$(1:"Hello"} + ${2:' world'} + ${3:"!!!"}
+$(1:'Hello'} + ${2:123}
+
+
+::letter (3) of [world]
+${1:string object@"world"}[${2:index (0 = first item)@2}]
+
+::length of [world]
+${1:string object@"world"}.length
+
+::
+
+::(16) mod (5)
+${1:16} % ${2:5}
+(${1:16} % ${2:5})
+
+::round(3.8)
+CMath.round(${1:3.8})
+
+::
+
+::(abs (9) :: operators)
+CMath.abs(${1:9})
+
+::(floor (3.8) :: operators)
+CMath.floor(${1:3.8})
+
+::(ceiling(3.8) :: operators)
+CMath.ceil(${1:3.8})
+
+::(square(4) :: operators)
+CMath.square(${1:4})
+
+::(sqrt(16) :: operators)
+CMath.sqrt(${1:16})
+
+::(sin(90) :: operators)
+CMath.sin(${1:degrees@90})
+
+::(cos(90) :: operators)
+CMath.cos(${1:degrees@90})
+
+::(tan(45) :: operators)
+CMath.tan(${1:degrees@45})
+
+::(asin(1) :: operators)
+CMath.asin(${1:1})
+
+::(acos(1) :: operators)
+CMath.acos(${1:1})
+
+::(atan(1) :: operators)
+CMath.atan(${1:1})
+
+::(ln(5) :: operators)
+CMath.ln(${1:5})
+
+::(log(100) :: operators)
+CMath.log(${1:100})
+
+::(e^(3) :: operators)
+CMath.exp(${1:3})
+
+::(10^(2) :: operators)
+CMath.pow10(${1:2});
+

@@ -1,0 +1,18 @@
+::enable body dragging
+stage.physics.enableDragging = true;\n
+stage.physics.enableDragging = false;\n
+stage.physics.enableDragging
+
+::set border type [bowl v]
+stage.physics.setBorder('bowl');\n
+stage.physics.setBorder('box');\n
+stage.physics.setBorder('bottom');\n
+stage.physics.setBorder('none');\n
+
+::show body shape outline
+stage.physics.showShapes = true;\n
+stage.physics.showShapes
+
+::show body constraints
+stage.physics.showConstraints = true;\n
+stage.physics.showConstraints

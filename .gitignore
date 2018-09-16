@@ -1,0 +1,12 @@
+.git/
+.idea/
+node_modules/
+generate/
+generated/
+**/*.rdb
+**/*.old
+build/*
+bin/
+
+# Allow
+!**/leaveme.txt

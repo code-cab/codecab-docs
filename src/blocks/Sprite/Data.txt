@@ -1,0 +1,78 @@
+::make variable [myVar] :: variables
+let ${1:myVar};\n
+let ${1:a} = ${2:10};\n
+global.${1:someVariable123} = ${2:"Hello"};\n
+this.${1:someSprite} = ${2:new CSprite()};\n
+
+::set [myVar v] to (10) :: variables
+${1:myVar} = ${2:10};\n
+${1:myVar} = ${2:"Hello"};\n
+${1:myVar} = ${2:'Hello'};\n
+
+::set global [myVar v] to (10) :: variables
+global.${1:myVar} = ${2:10};\n
+global.${1:myVar} = ${2:"Hello"};\n
+global.${1:myVar} = ${2:'Hello'};\n
+
+::set property [myVar] to [20] :: variables
+this.${1:myVar} = ${2:20};\n
+this.${1:myVar} = ${2:"Hello"};\n
+this.${1:myVar} = ${2:'Hello'};\n
+
+::set stage property [myVar] to [20] :: variables
+stage.${1:myVar} = ${2:20};\n
+stage.${1:myVar} = ${2:"Hello"};\n
+stage.${1:myVar} = ${2:'Hello'};\n
+
+::
+
+::change [myVar v] by (5) :: variables
+${1:myVar} += ${2:5};\n
+global.${1:myVar} += ${2:5};\n
+this.${1:myVar} += ${2:5};\n
+
+::show variable [myVar v] :: variables
+stage.watch(${1:x@0}, ${2:y@0}, '${3:myVar}', () => ${4:myVar});\n
+stage.watch(${1:x@0}, ${2:y@0}, '${3:myVar}', () => global.${4:myVar});\n
+stage.watch(${1:x@0}, ${2:y@0}, '${3:myVar}', () => this.${4:myVar});\n
+
+::
+
+:: set [myList] to empty array:: variables
+let ${1:myList} = [];\n
+global.${1:myList} = [];\n
+this.${1:myList} = [];\n
+
+:: set [myList] to array with values [one], [two], [three] :: variables
+let ${1:myList} = ["one", "two", "three"];\n
+global.${1:myList} = ['one', 'two', 'three'];\n
+this.${1:myList} = [1, 2, 3];\n
+
+:: add [thing] to [myList v] :: variables
+${1:myList}.push(${2:"thing"});\n
+${1:myList}.push(${2:5});\n
+${1:myList}.push(${2:myVar});\n
+${1:myList}.push(${2:someSprite});\n
+
+::
+
+:: delete item (5 v) of [myList v] :: variables
+${1:myList}.splice(${2:4}, 1);\n
+
+:: replace item (5 v) of [myList v] with [thing] :: variables
+${1:myList}[${2:4}] = ${3:"thing"};\n
+
+:: for every item of [myList v]
+for (let myItem of myList) {\n
+\t\n
+}\n
+
+::
+
+
+:: (item (1 v) of [myList v] :: variables)
+${1:myList}[${2:0}]
+
+:: (length of [myList v] :: variables)
+${1:myList}.length
+

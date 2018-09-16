@@ -1,0 +1,14 @@
+::touching [mousepointer v] ?
+this.getTouching('mouse')
+this.getTouching('otherSprite1', 'otherSprite2', 'mouse')
+this.getTouching(otherSprite)
+this.getTouching()
+
+::set identifier to [mySprite1] :: sensing
+this.id = 'mySprite1'\n
+
+::
+
+::(identifier :: sensing)
+this.id
+

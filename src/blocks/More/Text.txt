@@ -1,0 +1,20 @@
+::create text [text1 v] with [Hello] size (20) :: pen
+let ${1:variable name@text1} = new CText('Hello', 20);\n
+
+::set fill color r (0) g (0) b (255) :: pen
+${1:text variable@text1}.setFillColor(${2:red (0-255)@0}, ${3:green (0-255)@0}, ${4:blue (0-255)@255});\n
+
+::set line color r (255) g (0) b (0) :: pen
+${1:text variable@text1}.setLineColor(${2:red (0-255)@255}, ${3:green (0-255)@0}, ${4:blue (0-255)@0});\n
+
+::set line width (4) :: pen
+${1:text variable@text1}
+
+::(x :: pen)
+
+::(y :: pen)
+
+::(text :: pen)
+
+::(size :: pen)
+

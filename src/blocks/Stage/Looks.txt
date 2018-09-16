@@ -1,0 +1,6 @@
+::switch backdrop to [background1 v]
+stage.setBackground(${1:image url@"img/background1.png"});\n
+stage.setBackground(${1:image url@"img/background1.png"}, "cover");\n
+stage.setBackground(${1:image url@"img/tile.png"}, "tiling");\n
+
+

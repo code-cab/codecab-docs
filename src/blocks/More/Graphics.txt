@@ -1,0 +1,53 @@
+::create graphics [graph1 v] :: pen
+let ${1:variable name@graph1} = new CGraphics();\n
+
+::
+
+::create sprite [mySprite] from graphics [graph1 v]
+let ${1:sprite mySprite) = new CSprite(${2:graph1});\n
+
+::
+::clear
+${1:graphics variable@graph1}.clear();\n
+
+::draw reactangle at (0) (0) size (10) (20) :: pen
+${1:graphics variable@graph1}.rect(${2:x@0}, ${3:y@0}, ${4:width@10}, ${5:height@20});\n
+
+::draw circle at (0) (0) radius (20) :: pen
+${1:graphics variable@graph1}.circle(${2:x@0}, ${3:y@0}, ${4:radius@20});\n
+
+::draw ellipse at (0) (0) size (10) (20) :: pen
+${1:graphics variable@graph1}.ellipse(${2:x@0}, ${3:y@0}, ${4:width@10}, ${5:height@20});\n
+
+::
+
+::move pen to (-20) (-30) :: pen
+${1:graphics variable@graph1}.moveTo(${2:x@-20}, ${3:y@-30});\n
+
+::draw line to (50) (30) :: pen
+${1:graphics variable@graph1}.lineTo(${2:x@50}, ${3:y@30});\n
+
+::
+
+::set line color r (255) g (0) b (0) :: pen
+${1:graphics variable@graph1}.setLineColor(${2:red (0-255)@255}, ${3:green (0-255)@0}, ${4:blue (0-255)@0});\n
+
+::set fill color r (0) g (0) b (255) :: pen
+${1:graphics variable@graph1}.setFillColor(${2:red (0-255)@0}, ${3:green (0-255)@0}, ${4:blue (0-255)@255});\n
+
+::set line width (10) :: pen
+${1:graphics variable@graph1}.lineWidth = ${2:line width@10};\n
+
+::
+
+::begin filling objects :: pen
+${1:graphics variable@graph1}.beginFill();\n
+
+::end filling objects :: pen
+${1:graphics variable@graph1}.endFill();\n
+
+::
+
+::when green flag clicked
+${1:sprite variable name@sprite1}.onStart(function() {\n\t${0:}\n});\n
+${1:sprite variable name@sprite1}.onStart(async function() {\n\t${0:}\n});\n
