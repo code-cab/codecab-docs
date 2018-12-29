@@ -69,7 +69,7 @@ Geeft de motor van de [rotating joint](CSprite.body.createRotatingJoint) kracht.
 
 Force werkt alleen in combinatie met [speed](CMotorizedJoint.speed).
 
-## CMotorizedJoint.autoBreak
+## CMotorizedJoint.autoBrake
 
 Bepaald of de motor van een [rotating joint](CSprite.body.createRotatingJoint)
 direct stilstaat als de [speed](CMotorizedJoint.speed) naar 0 wordt gezet of

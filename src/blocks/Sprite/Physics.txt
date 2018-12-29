@@ -60,9 +60,9 @@ ${1:joint@joint1}.speed = ${2:speed in rotations/sec@10};\n
 ${1:joint@joint1}.force
 ${1:joint@joint1}.force = ${2:force@40};\n
 
-::(joint motor auto break)
-${1:joint@joint1}.autoBreak = true;
-${1:joint@joint1}.autoBreak = false;
+::(joint motor auto brake)
+${1:joint@joint1}.autoBrake = true;
+${1:joint@joint1}.autoBrake = false;
 
 
 
